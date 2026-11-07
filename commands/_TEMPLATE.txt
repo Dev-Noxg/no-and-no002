@@ -1,0 +1,16 @@
+// انسخ المحتوى ده في ملف .js داخل مجلد القسم (مثلا commands/tools/my.js).
+// ممكن تحط أكتر من أمر في نفس الملف. البوت بيحمّلهم تلقائيًا ويعدّهم في القائمة.
+export default [
+  {
+    name: 'اسم_الامر',
+    aliases: ['alias'],
+    desc: 'وصف قصير',
+    // group: true,      // للمجموعات فقط
+    // admin: true,      // للأدمن فقط
+    // botAdmin: true,   // يحتاج البوت أدمن
+    // owner: true,      // للمطور فقط
+    async run({ sock, m, args, text, target, jid, sender, reply, send, isAdmin, isOwner }) {
+      reply('أهلا!');
+    },
+  },
+];
